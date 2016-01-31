@@ -1,4 +1,8 @@
-public class Lab2 {
+
+
+public class lab2
+
+{
     
     public static void main(String[] args) {
 
@@ -18,13 +22,13 @@ public class Lab2 {
 	
 	boolean manGoingToStIves = true;
 
-	int numWives = 7;
+	short numWives = 7; //i would make all of these int as they should all be whole numbers of things.
 
-	int numSacksPerWife =  7;
+	int numSacksPerWife =  7; // but I made them all compile in their own way.
 	
-	int numCatsPerSack = 7;
+	int numCatsPerSack = 7;  // it wouldnt conver the double to int so its an int ( as a fraction of a sack of kittens is gross)
 
-	int numKitsPerCat =  7;
+	int numKitsPerCat =  7;  //  math did not like the long thrown in there either, so its an int now.
 
 	int total;
 
@@ -38,18 +42,20 @@ public class Lab2 {
 	    // all of the wives, sacks, cats, and kittens are as well, along
 	    // with the narrator.
 	    // Calculate the number going to St. Ives
+	    
+	total = 2 + numWives+(numSacksPerWife * numWives)+(numSacksPerWife*numWives*numCatsPerSack)+(numSacksPerWife*numWives*numCatsPerSack*numKitsPerCat);
 		
-	     total = 2 + numWives+(numSacksPerWife * numWives)+(numSacksPerWife*numWives*numCatsPerSack)+(numSacksPerWife*numWives*numCatsPerSack*numKitsPerCat);
+		
 	} else {
 	    // Otherwise, only the narrator is going!
-	     total = 1;
+	    total = 1;
 	}
-	System.out.println ("Number going to St. Ives is " + total );
+	
 	// 3. Right before exiting, the system should print
 	// "Number going to St. Ives is " and then, on the same line,
 	// the number going to St. Ives (stored in the _total_ variable).
 	// Add a statement or statements that will do this.
-	
+	System.out.println ("Number going to St. Ives is " + total );
     }
     
 }
